@@ -1,3 +1,13 @@
+# 環境名
+set :stage, :production
+
+# RAILS_ENVに設定する値
+set :rails_env, :production
+
+role :app, %w{ app@test.mktktmr.net }
+role :web, %w{ app@test.mktktmr.net }
+role :db,  %w{ app@test.mktktmr.net }
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
