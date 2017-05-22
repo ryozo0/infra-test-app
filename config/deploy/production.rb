@@ -4,9 +4,9 @@ set :stage, :production
 # RAILS_ENVに設定する値
 set :rails_env, :production
 
-role :app, %w{ app@test.mktktmr.net }
-role :web, %w{ app@test.mktktmr.net }
-role :db,  %w{ app@test.mktktmr.net }
+role :app, %w{ app@diveintocode-infra.xyz }
+role :web, %w{ app@diveintocode-infra.xyz }
+role :db,  %w{ app@diveintocode-infra.xyz }
 
 # server-based syntax
 # ======================

@@ -4,17 +4,17 @@
 lock '3.8.1'
 
 # デプロイするアプリケーション名
-set :application, "infra-test-app" #ENV['APP_NAME']
+set :application, "infra-test-app"
 
 # cloneするgitのリポジトリ
-set :repo_url, "https://github.com/mktktmr/infra-test-app.git" #ENV['REPO_URL']
+set :repo_url, "https://github.com/DiveintoCode-corp/infra-test-app.git"
 
 # deployするブランチ。デフォルトはmaster
 # この記載をすることで bundle exec cap production deploy BRANCH=ブランチ名で特定のブランチをデプロイできるようになる
 set :branch, ENV['BRANCH'] || 'master'
 
 # deploy先のディレクトリ。
-set :deploy_to, "/var/www/infra-test-app" #'/var/www/' + ENV['APP_NAME']
+set :deploy_to, "/var/www/infra-test-app"
 
 # シンボリックリンクをはるファイル。(※後述)
 set :linked_files, %w(config/secrets.yml config/database.yml .env)
