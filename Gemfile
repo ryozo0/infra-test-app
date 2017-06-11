@@ -27,6 +27,8 @@ gem 'fog-aws'
 
 gem 'dotenv-rails'
 
+gem 'dalli-elasticache'
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end
