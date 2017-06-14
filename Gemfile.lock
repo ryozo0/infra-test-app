@@ -53,6 +53,8 @@ GEM
     capistrano-bundler (1.2.0)
       capistrano (~> 3.1)
       sshkit (~> 1.2)
+    capistrano-maintenance (1.2.0)
+      capistrano (>= 3.0)
     capistrano-rails (1.2.3)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
@@ -73,6 +75,9 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
+    dalli (2.7.6)
+    dalli-elasticache (0.2.0)
+      dalli (>= 1.0.0)
     devise (4.2.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -225,11 +230,13 @@ DEPENDENCIES
   byebug
   capistrano
   capistrano-bundler
+  capistrano-maintenance (~> 1.0)
   capistrano-rails
   capistrano-rbenv
   capistrano3-unicorn
   carrierwave (~> 1.0)
   coffee-rails (~> 4.2)
+  dalli-elasticache
   devise
   dotenv-rails
   fog-aws
@@ -250,4 +257,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.14.6
+   1.15.0

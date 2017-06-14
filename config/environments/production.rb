@@ -83,4 +83,10 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # For dalli ElasticCache
+  endpoint    = "infra-test-cache.vgmion.cfg.apne1.cache.amazonaws.com:11211"
+  elasticache = Dalli::ElastiCache.new(endpoint)
+
+  config.cache_store = :dalli_store, elasticache.servers, {:expires_in => 1.day, :compress => true}
 end
