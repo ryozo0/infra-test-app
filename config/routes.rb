@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  get 'healthcheck', to: 'healthcheck#index'
   devise_for :users
   root "blogs#index"
   resources :blogs
