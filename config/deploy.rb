@@ -4,7 +4,7 @@
 lock '3.8.1'
 
 # デプロイするアプリケーション名
-set :application, 'infra-test-app'
+set :application, 'infra_test_app'
 
 # cloneするgitのリポジトリ
 set :repo_url, 'https://github.com/ryozo0/infra-test-app'
@@ -14,7 +14,7 @@ set :repo_url, 'https://github.com/ryozo0/infra-test-app'
 set :branch, ENV['BRANCH'] || 'master'
 
 # deploy先のディレクトリ。
-set :deploy_to, '/var/www/infra-test-app'
+set :deploy_to, '/var/www/infra_test_app'
 
 # シンボリックリンクをはるファイル。(※後述)
 set :linked_files, %w(config/secrets.yml config/database.yml .env)

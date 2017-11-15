@@ -1,5 +1,5 @@
 # EC2上でアプリケーションがデプロイされるディレクトリを変数に格納
-app_path = '/var/www/infra-test-app'
+app_path = '/var/www/infra_test_app'
 app_shared_path = "#{app_path}/shared"
 
 # unicornのプロセス停止などに必要なPIDファイルの保存先
