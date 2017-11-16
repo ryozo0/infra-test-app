@@ -19,7 +19,7 @@ default: &default
 
 development:
   <<: *default
-  database: infra-test-app_development
+  database: infra_test_app_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: infra-test-app_production
-  username: infra-test-app
-  password: <%= ENV['INFRA-TEST-APP_DATABASE_PASSWORD'] %>
+  database: infra_test_app_production
+  username: infra_test_app
+  password: <%= ENV['INFRA_TEST_APP_DATABASE_PASSWORD'] %>
