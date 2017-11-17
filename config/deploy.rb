@@ -7,7 +7,7 @@ lock '3.8.1'
 set :application, 'infra_test_app'
 
 # cloneするgitのリポジトリ
-set :repo_url, 'https://github.com/ryozo0/infra_test_app'
+set :repo_url, 'git@github.com:ryozo0/infra_test_app.git'
 
 # deployするブランチ。デフォルトはmaster
 # この記載をすることで bundle exec cap production deploy BRANCH=ブランチ名で特定のブランチをデプロイできるようになる
