@@ -22,7 +22,7 @@ gem 'unicorn'
 gem 'devise'
 
 gem 'carrierwave', '~> 1.0'
-gem 'rmagick'
+gem 'mini_magick'
 gem 'fog-aws'
 
 gem 'dotenv-rails'
